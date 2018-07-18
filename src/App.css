@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css?family=Monoton|Montserrat|Shrikhand');
+
+body {
+  background: #2a6595;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #2a6595, #b7c4cd);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #2a6595, #b7c4cd); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.App {
+ width: 100%;
+ display: flex;
+ font-family: 'Montserrat', sans-serif;
+}
+header {
+  
+  width: 100%;
+  background-color: #000;
+  height: 100px;
+  display: flex;
+  align-content: flex-start;
+  align-items: center;
+  padding: 0px 20px;
+}
+header h3 {
+  color: #fff;
+  /* text-shadow: 1px 2px 3px rgb(242, 234, 0), 5px 10px 15px #2a6595; */
+  font-family: 'Shrikhand', cursive;
+}
+
+header img { 
+  height: 75px;
+  width: 75px;
+}
+.stickyTop {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: #000;
+}
+
+.title {
+  width: 100%;
+  text-align: center;
+  font-size: 30px;
+ 
+}
+
+.btnView {
+  background-color: rgb(242, 234, 0) ;
+  border: solid black 2px;
+  border-radius: 5px;
+}
+
+
+.searchInput {
+ 
+  font-size: 24px;
+  margin: 10px 10px 10px 10px;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #eee;
+}
+
+.Body {
+  margin-top: 180px;
+}
+.Results {
+  
+ width: 100%;
+ 
+}
+
+.nowPlaying {
+  /* font-size: 100px; */
+  text-align: center;
+  font-size: 45px;
+  font-family: 'Monoton', cursive;
+  margin: 20px 20px;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px #222;
+  background-color: rgb(242, 234, 0) ;
+}
+
+@media screen and (min-width: 1000px) {
+  .title {
+    width: 100%;
+    text-align: center;
+    font-size: 40px;
+  }
+  .Results {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: stretch;
+  }
+  .ResultRow {
+ width: 45%
+
+  }
+}
+.ResultRow {
+  
+  display: flex;
+  align-items: flex-start;
+  padding: 5px;
+  margin: 20px;
+  background-color: #d0dfeec8;
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px #222
+}
+.posterImg {
+  width: 150px;
+  height: 225px;
+}
+.posterImg img{
+  border-radius: 5px;
+ 
+}
+
+.movieDetails {
+  margin: 0px 20px;
+}
